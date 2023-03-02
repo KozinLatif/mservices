@@ -1,0 +1,9 @@
+Project:
+dotnet new webapi -n PlatformService
+
+Packages:
+dotnet add package automapper.extensions.microsoft.dependencyinjection
+dotnet add package microsoft.entityframeworkcore
+dotnet add package microsoft.entityframeworkcore.design
+dotnet add package microsoft.entityframeworkcore.inmemory
+dotnet add package microsoft.entityframeworkcore.sqlserver
