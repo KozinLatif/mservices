@@ -29,12 +29,7 @@ namespace PlatformService.Repository
 
         public Platform GetPlatformById(int id)
         {
-            var result =_context.Platforms.FirstOrDefault(p => p.Id == id);
-            if (result == null)
-            {
-                throw new ArgumentNullException(nameof(id));
-            }
-            return result;
+            return _context.Platforms.FirstOrDefault(p => p.Id == id);
         }
 
         public bool SaveChanges()
