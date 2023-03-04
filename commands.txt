@@ -7,3 +7,19 @@ dotnet add package microsoft.entityframeworkcore
 dotnet add package microsoft.entityframeworkcore.design
 dotnet add package microsoft.entityframeworkcore.inmemory
 dotnet add package microsoft.entityframeworkcore.sqlserver
+
+Docker:
+docker images
+docker image history
+docker ps
+docker ps -a
+docker stop 0a48485c1d36
+docker start 0a48485c1d36
+docker rm 0a48485c1d36 // remove container
+docker rmi 0a48485c1d36 // remove image
+
+docker build -t hello-docker:1.0.0 .
+docker build -t hello-docker:1.0.1 .
+
+docker run -d --name first-container -p 8080:80 hello-docker:1.0.0
+docker run -d --name first-container -p 8081:80 hello-docker:1.0.1
